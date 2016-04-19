@@ -7,6 +7,8 @@
 
 ###With options:
 
+You can send messages to any channel, private or public, or a user's Slackbot channel. Call setChannel with '#channel' to target a public or private channel, and '@user' to target a specific user's Slackbot.
+
 	$options = new SlackNotificationOptions();
 	$options->setChannel('#mychannel');
 	$options->setText("New message");
