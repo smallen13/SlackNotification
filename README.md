@@ -1,11 +1,11 @@
-How to use this:
+##How to use this:
 
-Simple:
+###Simple:
 
 	$slack = new SlackNotification('<web hook url>');
 	$slack->send();
 
-With options:
+###With options:
 
 	$options = new SlackNotificationOptions();
 	$options->setChannel('#mychannel');
@@ -16,7 +16,7 @@ With options:
 	$slack = new SlackNotification('<web hook url>',$options,$debug);
 	$slack->send();
 
-with an attachment and fields:
+###With an attachment and fields:
 
 	$attachments = array();
 
@@ -39,7 +39,7 @@ with an attachment and fields:
 	$tempField['title'] = "Email";
 	$tempField['value'] = $email;
 	$tempField['short'] = "true";
-	array_push($tempAttach['fields'],$tempField);
+	array_push($tempAttach['fields'],$tempField);../../../../Downloads/README.md.html
 
 	$tempField = array();
 	$tempField['title'] = "Message";
